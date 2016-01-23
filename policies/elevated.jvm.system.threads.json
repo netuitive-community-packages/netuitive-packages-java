@@ -1,0 +1,35 @@
+{
+  "policy" : {
+    "id" : null,
+    "name" : "Elevated JVM System Threads",
+    "description" : "The number of system threads in use by the JVM is higher than expected.  The metric is deviating from both the baseline and contextual bands.",
+    "scope" : {
+      "elementName" : "",
+      "elementType" : "JVM",
+      "elementTags" : { }
+    },
+    "duration" : 900,
+    "conditions" : [ {
+      "metric" : "system.threads",
+      "wildcard" : null,
+      "analytic" : "baselineDeviation",
+      "operator" : ">",
+      "level" : null
+    }, {
+      "metric" : "system.threads",
+      "wildcard" : null,
+      "analytic" : "contextualDeviation",
+      "operator" : ">",
+      "level" : null
+    } ],
+    "actions" : [ {
+      "type" : "event",
+      "category" : 2
+    } ],
+    "enabled" : true,
+    "deleted" : false,
+    "originTenantId" : null,
+    "originPolicyId" : null,
+    "lastUpdated" : null
+  }
+}

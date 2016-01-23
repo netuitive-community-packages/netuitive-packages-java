@@ -1,0 +1,39 @@
+{
+  "analyticConfiguration" : {
+    "tenantId" : null,
+    "type" : "ACE",
+    "id" : null,
+    "packageId" : null,
+    "name" : "Java JVM",
+    "scope" : {
+      "elementName" : null,
+      "elementType" : "JVM",
+      "elementTags" : null
+    },
+    "metrics" : [ {
+      "match" : "cpu.used.percent",
+      "properties" : {
+        "baseline" : true,
+        "correlation" : true
+      }
+    }, {
+      "match" : "system.threads",
+      "properties" : {
+        "baseline" : true,
+        "correlation" : true
+      }
+    }, {
+      "match" : "system.loadedclasses",
+      "properties" : {
+        "baseline" : true,
+        "correlation" : true
+      }
+    }, {
+      "match" : "netuitive.jvm.heap.utilizationpercent",
+      "properties" : {
+        "baseline" : true,
+        "correlation" : true
+      }
+    } ]
+  }
+}

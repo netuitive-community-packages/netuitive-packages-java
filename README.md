@@ -1,2 +1,4 @@
-# netuitive-packages-java
-A set of Netuitive analytics configurations, polices, dashboards, and reports that are used to monitor performance of Java methods and JVM resources.
+netuitive.packages.java 1.0.0
+----------------------
+
+Initial production release of the package for monitoring Java method and JVM resources.

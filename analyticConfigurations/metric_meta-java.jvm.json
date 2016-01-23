@@ -1,0 +1,56 @@
+{
+  "analyticConfiguration" : {
+    "tenantId" : null,
+    "type" : "METRIC_META",
+    "id" : null,
+    "packageId" : null,
+    "name" : "Java JVM",
+    "scope" : {
+      "elementName" : null,
+      "elementType" : "JVM",
+      "elementTags" : null
+    },
+    "metrics" : [ {
+      "match" : ".*\\.calls",
+      "properties" : {
+        "STATISTIC" : "sum"
+      }
+    }, {
+      "match" : ".*\\.errors",
+      "properties" : {
+        "STATISTIC" : "sum"
+      }
+    }, {
+      "match" : ".*\\.time",
+      "properties" : {
+        "STATISTIC" : "sum"
+      }
+    }, {
+      "match" : "cpu.used.percent",
+      "properties" : {
+        "tags" : {
+          "utilization" : true
+        },
+        "validMax" : 100
+      }
+    }, {
+      "match" : "netuitive.jvm.heap.utilizationpercent",
+      "properties" : {
+        "tags" : {
+          "utilization" : true
+        },
+        "validMax" : 100
+      }
+    }, {
+      "match" : "gc\\..*\\.collectiontime",
+      "properties" : {
+        "validMax" : 300000
+      }
+    }, {
+      "match" : "netuitive.method\\..*\\.errorpercent",
+      "properties" : {
+        "validMax" : 100
+      }
+    } ]
+  }
+}

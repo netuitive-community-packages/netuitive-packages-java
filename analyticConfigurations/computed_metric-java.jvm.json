@@ -1,0 +1,36 @@
+{
+  "analyticConfiguration" : {
+    "tenantId" : null,
+    "type" : "COMPUTED_METRIC",
+    "id" : null,
+    "packageId" : null,
+    "name" : "Java JVM",
+    "scope" : {
+      "elementName" : null,
+      "elementType" : "JVM",
+      "elementTags" : null
+    },
+    "metrics" : [ {
+      "match" : "netuitive.jvm.heap.utilizationpercent",
+      "properties" : {
+        "expression" : "(data['heap.used'].actual / data['heap.committed'].actual) * 100",
+        "fqn" : "netuitive.jvm.heap.utilizationpercent",
+        "name" : "Heap Utilization Percent"
+      }
+    }, {
+      "match" : "netuitive.method.errorpercent",
+      "properties" : {
+        "expression" : "data['${1}.${2}.calls'].actual == 0 ? 0 : 100 * (data['${1}.${2}.errors'].actual / data['${1}.${2}.calls'].actual)",
+        "for" : "(.*)\\.(.*)\\.errors",
+        "fqn" : "netuitive.method.${1}.${2}.errorpercent"
+      }
+    }, {
+      "match" : "netuitive.method.averageresponsetime",
+      "properties" : {
+        "expression" : "data['${1}.${2}.calls'].actual == 0 ? 0 : (data['${1}.${2}.time'].actual / data['${1}.${2}.calls'].actual)",
+        "for" : "(.*)\\.(.*)\\.time",
+        "fqn" : "netuitive.method.${1}.${2}.averageresponsetime"
+      }
+    } ]
+  }
+}
