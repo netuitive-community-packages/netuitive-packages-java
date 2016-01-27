@@ -1,8 +1,8 @@
 {
   "policy" : {
     "id" : null,
-    "name" : "Elevated JVM Heap Usage",
-    "description" : "The percentage of the heap in use by the JVM is higher than expected.  The metric is deviating from both the baseline and contextual bands.",
+    "name" : "Java - Elevated JVM CPU Activity",
+    "description" : "CPU usage by the JVM is higher than expected.  The metric is deviating from both the baseline and contextual bands.",
     "scope" : {
       "elementName" : "",
       "elementType" : "JVM",
@@ -10,13 +10,13 @@
     },
     "duration" : 900,
     "conditions" : [ {
-      "metric" : "netuitive.jvm.heap.utilizationpercent",
+      "metric" : "cpu.used.percent",
       "wildcard" : null,
       "analytic" : "baselineDeviation",
       "operator" : ">",
       "level" : null
     }, {
-      "metric" : "netuitive.jvm.heap.utilizationpercent",
+      "metric" : "cpu.used.percent",
       "wildcard" : null,
       "analytic" : "contextualDeviation",
       "operator" : ">",

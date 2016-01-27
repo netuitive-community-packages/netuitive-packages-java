@@ -18,19 +18,19 @@
   },
   "policies" : [ {
     "data" : {
-      "file" : "policies/elevated.jvm.cpu.activity.json",
+      "file" : "policies/java.-.elevated.jvm.cpu.activity.json",
       "encoding" : "application/json",
       "content" : null
     }
   }, {
     "data" : {
-      "file" : "policies/elevated.jvm.heap.usage.json",
+      "file" : "policies/java.-.elevated.jvm.heap.usage.json",
       "encoding" : "application/json",
       "content" : null
     }
   }, {
     "data" : {
-      "file" : "policies/elevated.jvm.system.threads.json",
+      "file" : "policies/java.-.elevated.jvm.system.threads.json",
       "encoding" : "application/json",
       "content" : null
     }
