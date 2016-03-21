@@ -23,13 +23,17 @@
     }, {
       "match" : ".*\\.time",
       "properties" : {
-        "STATISTIC" : "sum"
+        "STATISTIC" : "sum",
+        "tags" : {
+          "unit" : "ms"
+        }
       }
     }, {
       "match" : "cpu.used.percent",
       "properties" : {
         "tags" : {
-          "utilization" : true
+          "utilization" : true,
+          "unit" : "percent"
         },
         "validMax" : 100
       }
@@ -37,7 +41,8 @@
       "match" : "netuitive.jvm.heap.utilizationpercent",
       "properties" : {
         "tags" : {
-          "utilization" : true
+          "utilization" : true,
+          "unit" : "percent"
         },
         "validMax" : 100
       }
@@ -49,7 +54,24 @@
     }, {
       "match" : "netuitive.method\\..*\\.errorpercent",
       "properties" : {
+        "tags" : {
+          "unit" : "percent"
+        },
         "validMax" : 100
+      }
+    }, {
+      "match" : "heap\\..*",
+      "properties" : {
+        "tags" : {
+          "unit" : "bytes"
+        }
+      }
+    }, {
+      "match" : "mempool\\..*",
+      "properties" : {
+        "tags" : {
+          "unit" : "bytes"
+        }
       }
     } ]
   }

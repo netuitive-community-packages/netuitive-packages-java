@@ -5,6 +5,7 @@
 ###Version 1.2.0
 
 * Added Java-specific element detail page.
+* Defined units for the metrics.
 
 ###Version 1.1.0
 
