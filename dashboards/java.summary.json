@@ -14,8 +14,8 @@
     "tenantId" : null,
     "userId" : null,
     "creatorEmail" : null,
-    "created" : "2016-03-15T21:08:30Z",
-    "updated" : "2016-03-16T15:34:06Z",
+    "created" : "2016-03-17T14:02:44Z",
+    "updated" : "2016-03-17T14:02:44Z",
     "widgets" : [ {
       "id" : "061ab890-6a0b-3146-8b22-60ad6595a501",
       "name" : "Metric Summary Across JVMs",
@@ -43,8 +43,8 @@
       },
       "dashboardId" : null,
       "userId" : null,
-      "created" : "2016-03-15T21:08:30Z",
-      "updated" : "2016-03-15T21:08:30Z"
+      "created" : "2016-03-17T14:02:44Z",
+      "updated" : "2016-03-17T14:02:44Z"
     }, {
       "id" : "77245a82-0fd5-3dbe-aa4a-f8e775ee463b",
       "name" : "Top 5 Highest Heap Usage",
@@ -72,8 +72,8 @@
       },
       "dashboardId" : null,
       "userId" : null,
-      "created" : "2016-03-15T21:08:30Z",
-      "updated" : "2016-03-15T21:08:30Z"
+      "created" : "2016-03-17T14:02:44Z",
+      "updated" : "2016-03-17T14:02:44Z"
     }, {
       "id" : "33c82967-3eee-3c9a-8b19-be378935feaa",
       "name" : "Top 5 Highest CPU Usage",
@@ -101,8 +101,8 @@
       },
       "dashboardId" : null,
       "userId" : null,
-      "created" : "2016-03-15T21:08:30Z",
-      "updated" : "2016-03-15T21:08:30Z"
+      "created" : "2016-03-17T14:02:44Z",
+      "updated" : "2016-03-17T14:02:44Z"
     }, {
       "id" : "7f343952-2a60-3dd9-847a-c3efda2efeb2",
       "name" : "Java Metric Aggregation",
@@ -130,8 +130,8 @@
       },
       "dashboardId" : null,
       "userId" : null,
-      "created" : "2016-03-15T21:08:30Z",
-      "updated" : "2016-03-15T21:08:30Z"
+      "created" : "2016-03-17T14:02:44Z",
+      "updated" : "2016-03-17T14:02:44Z"
     } ],
     "type" : "DEFAULT",
     "private" : false
