@@ -251,7 +251,7 @@
       "created" : "2016-03-16T03:20:58Z",
       "updated" : "2016-03-16T21:21:35Z"
     } ],
-    "type" : "DEFAULT",
+    "type" : "JVM",
     "private" : false
   }
 }
