@@ -49,6 +49,7 @@
     }, {
       "match" : "gc\\..*\\.collectiontime",
       "properties" : {
+        "type" : "COUNTER",
         "validMax" : 300000
       }
     }, {

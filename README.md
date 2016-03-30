@@ -1,6 +1,10 @@
-#netuitive.packages.java 1.2.0
+#netuitive.packages.java 1.2.1
 
 ##Release History
+
+###Version 1.2.1
+
+* Bug fix: Updated garbage collection time metrics to be of type COUNTER.
 
 ###Version 1.2.0
 
