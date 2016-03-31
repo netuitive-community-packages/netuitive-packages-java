@@ -1,5 +1,7 @@
 #netuitive.packages.java 1.2.1
 
+For detailed information on this package, please refer to the [online documentation](https://help.app.netuitive.com/Content/Misc/Datasources/new_jvm_datasource.htm).
+
 ##Release History
 
 ###Version 1.2.1
