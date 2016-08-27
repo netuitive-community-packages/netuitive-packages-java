@@ -1,6 +1,6 @@
 {
   "id" : "netuitive.packages.java",
-  "version" : "1.2.3",
+  "version" : "1.2.4",
   "manifest" : {
     "name" : "Netuitive Packages Java",
     "description" : "A set of Netuitive analytics configurations, polices, dashboards, and reports that are used to monitor performance of Java methods and JVM resources.",
@@ -12,7 +12,7 @@
       "logo" : "http://assets.app.netuitive.com/pkg/logo/netuitive/banner_logo.png",
       "download" : "https://github.com/netuitive-community-packages/netuitive-packages-java/archive/master.zip"
     },
-    "compatibility" : [ "JAVA" ],
+    "compatibility" : [ "JAVA:JAVA" ],
     "tags" : [ ],
     "checksum" : null
   },
