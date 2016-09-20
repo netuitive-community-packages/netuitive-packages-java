@@ -4,7 +4,7 @@
     "name" : "Java - Elevated JVM System Threads",
     "description" : "The number of system threads in use by the JVM is higher than expected.  The metric is deviating from both the baseline and contextual bands.",
     "scope" : {
-      "elementName" : "",
+      "elementName" : null,
       "elementNameExclude" : null,
       "fqnIncludes" : [ ],
       "fqnExcludes" : [ ],
