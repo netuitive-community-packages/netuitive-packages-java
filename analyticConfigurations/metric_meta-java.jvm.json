@@ -54,7 +54,7 @@
         "validMax" : 300000
       }
     }, {
-      "match" : "netuitive.method\\..*\\.errorpercent",
+      "match" : ".*\\.errorpercent",
       "properties" : {
         "tags" : {
           "unit" : "percent"

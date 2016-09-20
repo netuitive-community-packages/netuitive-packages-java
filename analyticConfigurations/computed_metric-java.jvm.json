@@ -23,14 +23,7 @@
       "properties" : {
         "expression" : "data['${1}.${2}.calls'].actual == 0 ? 0 : 100 * (data['${1}.${2}.errors'].actual / data['${1}.${2}.calls'].actual)",
         "for" : "(.*)\\.(.*)\\.errors",
-        "fqn" : "netuitive.method.${1}.${2}.errorpercent"
-      }
-    }, {
-      "match" : "netuitive.method.averageresponsetime",
-      "properties" : {
-        "expression" : "data['${1}.${2}.calls'].actual == 0 ? 0 : (data['${1}.${2}.time'].actual / data['${1}.${2}.calls'].actual)",
-        "for" : "(.*)\\.(.*)\\.time",
-        "fqn" : "netuitive.method.${1}.${2}.averageresponsetime"
+        "fqn" : "netuitive.${1}.${2}.errorpercent"
       }
     } ]
   }

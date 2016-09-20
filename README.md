@@ -1,8 +1,12 @@
-#netuitive.packages.java 1.2.4
+#netuitive.packages.java 1.3.0
 
 For detailed information on this package, please refer to the [online documentation](https://help.app.netuitive.com/Content/Misc/Datasources/new_jvm_datasource.htm).
 
 ##Release History
+
+###Version 1.3.0
+
+* Removed the computed metric for average response time, since this is now included as a collected metric from the Java Agent.
 
 ###Version 1.2.4
 
