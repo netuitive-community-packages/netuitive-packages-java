@@ -1,8 +1,12 @@
-#netuitive.packages.java 1.3.0
+#netuitive.packages.java 1.4.0
 
 For detailed information on this package, please refer to the [online documentation](https://help.netuitive.com/Content/Integrations/java.htm).
 
 ##Release History
+
+###Version 1.4.0
+
+* Updated gridstack layout for dashboards
 
 ###Version 1.3.0
 
