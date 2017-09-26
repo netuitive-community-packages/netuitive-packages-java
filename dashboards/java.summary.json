@@ -6,62 +6,12 @@
     "properties" : {
       "integrationType" : null,
       "timeRangeDuration" : "3600",
-      "density" : "normal",
+      "gridstackContents" : "[{\"id\":\"37eae575-e2b2-4af9-aacb-4ff96cfc305e\",\"x\":0,\"y\":0,\"width\":6,\"height\":9},{\"id\":\"787109b7-1d2f-4497-92ef-6f7bf27cda63\",\"x\":6,\"y\":0,\"width\":6,\"height\":9},{\"id\":\"91205330-1fd2-417e-936b-a6069b5cba21\",\"x\":0,\"y\":9,\"width\":12,\"height\":9}]",
       "refreshIntervalSeconds" : "300",
       "wrap" : "true"
     },
     "widgets" : [ {
-      "id" : "061ab890-6a0b-3146-8b22-60ad6595a501",
-      "name" : "Metric Summary Across JVMs",
-      "description" : null,
-      "widgetType" : "multi-metric-table",
-      "properties" : {
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[{\"name\":\"jvm.vendor\"},{\"name\":\"jvm.version\"}]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "element_id" : null,
-        "elementScopeTypes" : "[\"JVM\"]",
-        "metricLimit" : "10",
-        "metricUnit" : null,
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "groupName" : null,
-        "elementNameContains" : null,
-        "showHighest" : "true",
-        "metric_fqn" : null,
-        "width" : "auto",
-        "metrics" : "[{\"fqn\":\"cpu.used.percent\",\"aggFns\":[],\"aggFn\":\"avg\",\"displayName\":\"CPU Utilization\"},{\"fqn\":\"netuitive.jvm.heap.utilizationpercent\",\"aggFns\":[],\"aggFn\":\"avg\",\"displayName\":\"Heap Utilization\"},{\"fqn\":\"system.threads\",\"aggFns\":[],\"aggFn\":\"avg\",\"displayName\":\"Threads\"}]",
-        "selectedTab" : "table"
-      }
-    }, {
-      "id" : "77245a82-0fd5-3dbe-aa4a-f8e775ee463b",
-      "name" : "Top 5 Highest Heap Usage",
-      "description" : null,
-      "widgetType" : "high-low-metric",
-      "properties" : {
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "element_id" : null,
-        "elementScopeTypes" : "[\"JVM\"]",
-        "metricLimit" : "5",
-        "metricUnit" : null,
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "groupName" : null,
-        "elementNameContains" : null,
-        "showHighest" : "true",
-        "metric_fqn" : "netuitive.jvm.heap.utilizationpercent",
-        "width" : "auto",
-        "metrics" : "[]",
-        "selectedTab" : "graph"
-      }
-    }, {
-      "id" : "33c82967-3eee-3c9a-8b19-be378935feaa",
+      "id" : "37eae575-e2b2-4af9-aacb-4ff96cfc305e",
       "name" : "Top 5 Highest CPU Usage",
       "description" : null,
       "widgetType" : "high-low-metric",
@@ -86,13 +36,38 @@
         "selectedTab" : "graph"
       }
     }, {
-      "id" : "7f343952-2a60-3dd9-847a-c3efda2efeb2",
-      "name" : "Java Metric Aggregation",
+      "id" : "787109b7-1d2f-4497-92ef-6f7bf27cda63",
+      "name" : "Top 5 Highest Heap Usage",
       "description" : null,
-      "widgetType" : "metric-count-agg",
+      "widgetType" : "high-low-metric",
       "properties" : {
         "showElementTotal" : "true",
         "selectedAttributes" : "[]",
+        "elementScopeTags" : "[]",
+        "useElementNameContains" : "true",
+        "element_id" : null,
+        "elementScopeTypes" : "[\"JVM\"]",
+        "metricLimit" : "5",
+        "metricUnit" : null,
+        "metricAggs" : "[]",
+        "elementScopeIds" : "[]",
+        "elementScopeAttributes" : "[]",
+        "groupName" : null,
+        "elementNameContains" : null,
+        "showHighest" : "true",
+        "metric_fqn" : "netuitive.jvm.heap.utilizationpercent",
+        "width" : "auto",
+        "metrics" : "[]",
+        "selectedTab" : "graph"
+      }
+    }, {
+      "id" : "91205330-1fd2-417e-936b-a6069b5cba21",
+      "name" : "Metric Summary Across JVMs",
+      "description" : null,
+      "widgetType" : "multi-metric-table",
+      "properties" : {
+        "showElementTotal" : "true",
+        "selectedAttributes" : "[{\"name\":\"jvm.vendor\"},{\"name\":\"jvm.version\"}]",
         "elementScopeTags" : "[]",
         "useElementNameContains" : "true",
         "element_id" : null,
@@ -106,8 +81,8 @@
         "elementNameContains" : null,
         "showHighest" : "true",
         "metric_fqn" : null,
-        "width" : "medium",
-        "metrics" : "[{\"fqn\":\"cpu.used.percent\",\"aggFns\":[],\"aggFn\":\"avg\"},{\"fqn\":\"netuitive.jvm.heap.utilizationpercent\",\"aggFns\":[],\"aggFn\":\"avg\"},{\"fqn\":\"gc.psmarksweep.collectiontime\",\"aggFns\":[],\"aggFn\":\"avg\"},{\"fqn\":\"gc.psscavenge.collectiontime\",\"aggFns\":[],\"aggFn\":\"avg\"}]",
+        "width" : "auto",
+        "metrics" : "[{\"fqn\":\"cpu.used.percent\",\"aggFns\":[],\"aggFn\":\"avg\",\"displayName\":\"CPU Utilization\"},{\"fqn\":\"netuitive.jvm.heap.utilizationpercent\",\"aggFns\":[],\"aggFn\":\"avg\",\"displayName\":\"Heap Utilization\"},{\"fqn\":\"system.threads\",\"aggFns\":[],\"aggFn\":\"avg\",\"displayName\":\"Threads\"}]",
         "selectedTab" : "table"
       }
     } ],
