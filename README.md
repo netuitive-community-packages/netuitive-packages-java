@@ -1,8 +1,13 @@
-# netuitive.packages.java 1.4.0
+# netuitive.packages.java
 
 For detailed information on this package, please refer to the [online documentation](https://help.netuitive.com/Content/Integrations/java.htm).
 
 ## Release History
+
+### Version next
+
+* Updated element details dashboard layout
+* Updated summary dashboard for new widget configs
 
 ### Version 1.4.0
 
