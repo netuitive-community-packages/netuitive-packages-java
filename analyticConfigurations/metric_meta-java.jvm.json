@@ -39,25 +39,7 @@
         "validMax" : 100
       }
     }, {
-      "match" : "netuitive.jvm.heap.utilizationpercent",
-      "properties" : {
-        "tags" : {
-          "utilization" : true,
-          "unit" : "percent"
-        },
-        "validMax" : 100
-      }
-    }, {
-      "match" : "netuitive.jvm.non-heap.utilizationpercent",
-      "properties" : {
-        "tags" : {
-          "utilization" : true,
-          "unit" : "percent"
-        },
-        "validMax" : 100
-      }
-    }, {
-      "match" : "netuitive.jvm.totalmemory.utilizationpercent",
+      "match" : "netuitive.jvm\\..*\\.utilizationpercent",
       "properties" : {
         "tags" : {
           "utilization" : true,

@@ -30,19 +30,7 @@
         "correlation" : true
       }
     }, {
-      "match" : "netuitive.jvm.heap.utilizationpercent",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
-    }, {
-      "match" : "netuitive.jvm.non-heap.utilizationpercent",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
-    }, {
-      "match" : "netuitive.jvm.totalmemory.utilizationpercent",
+      "match" : "netuitive.jvm\\..*\\.utilizationpercent",
       "properties" : {
         "baseline" : true,
         "correlation" : true
