@@ -48,6 +48,24 @@
         "validMax" : 100
       }
     }, {
+      "match" : "netuitive.jvm.non-heap.utilizationpercent",
+      "properties" : {
+        "tags" : {
+          "utilization" : true,
+          "unit" : "percent"
+        },
+        "validMax" : 100
+      }
+    }, {
+      "match" : "netuitive.jvm.totalmemory.utilizationpercent",
+      "properties" : {
+        "tags" : {
+          "utilization" : true,
+          "unit" : "percent"
+        },
+        "validMax" : 100
+      }
+    }, {
       "match" : "gc\\..*\\.collectiontime",
       "properties" : {
         "type" : "COUNTER",
