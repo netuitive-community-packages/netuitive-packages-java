@@ -39,7 +39,7 @@
         "validMax" : 100
       }
     }, {
-      "match" : "netuitive.jvm.heap.utilizationpercent",
+      "match" : "netuitive.jvm\\..*\\.utilizationpercent",
       "properties" : {
         "tags" : {
           "utilization" : true,
