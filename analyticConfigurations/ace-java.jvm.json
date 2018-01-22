@@ -30,7 +30,7 @@
         "correlation" : true
       }
     }, {
-      "match" : "netuitive.jvm.heap.utilizationpercent",
+      "match" : "netuitive.jvm\\..*\\.utilizationpercent",
       "properties" : {
         "baseline" : true,
         "correlation" : true

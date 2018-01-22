@@ -4,6 +4,10 @@ For detailed information on this package, please refer to the [online documentat
 
 ## Release History
 
+### Version 1.6.0
+
+*Added computed metrics for jvm non-heap and total memory utilization
+
 ### Version 1.5.0
 
 * Updated element details dashboard layout
