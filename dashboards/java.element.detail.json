@@ -1,222 +1,132 @@
 {
-  "dashboard" : {
-    "name" : "Java Element Detail",
-    "description" : null,
-    "layout" : null,
-    "properties" : {
-      "integrationType" : null,
-      "timeRangeDuration" : "3600",
-      "gridstackContents" : "[{\"id\":\"899805eb-0bf2-496f-bc64-47e373439034\",\"x\":0,\"y\":0,\"width\":4,\"height\":9},{\"id\":\"12b8a43a-7794-41f5-8168-6ca0fb1b8111\",\"x\":8,\"y\":0,\"width\":4,\"height\":9},{\"id\":\"7230cab2-0306-4677-815a-686f36462e2a\",\"x\":0,\"y\":9,\"width\":4,\"height\":9},{\"id\":\"57d62334-d76b-4512-bb89-11b828535e53\",\"x\":4,\"y\":9,\"width\":4,\"height\":9},{\"id\":\"edc05a9f-2d34-4377-984d-3762aed28126\",\"x\":4,\"y\":0,\"width\":4,\"height\":9},{\"id\":\"cc9c1dbf-3c24-465a-ad82-823de8c0a29e\",\"x\":6,\"y\":18,\"width\":6,\"height\":9},{\"id\":\"54ca0329-1ae6-45c1-94d7-451e5e976be7\",\"x\":8,\"y\":9,\"width\":4,\"height\":9},{\"id\":\"b0c667c3-4ff1-46dd-9765-056f82ffa945\",\"x\":0,\"y\":18,\"width\":6,\"height\":9}]",
-      "refreshIntervalSeconds" : "300",
-      "wrap" : "true"
+  "dashboard": {
+    "name": "Java Element Detail",
+    "private": false,
+    "properties": {
+      "gridstackContents": "[{\"id\":\"899805eb-0bf2-496f-bc64-47e373439034\",\"x\":0,\"y\":0,\"width\":4,\"height\":9},{\"id\":\"12b8a43a-7794-41f5-8168-6ca0fb1b8111\",\"x\":8,\"y\":0,\"width\":4,\"height\":9},{\"id\":\"7230cab2-0306-4677-815a-686f36462e2a\",\"x\":0,\"y\":9,\"width\":4,\"height\":9},{\"id\":\"57d62334-d76b-4512-bb89-11b828535e53\",\"x\":4,\"y\":9,\"width\":4,\"height\":9},{\"id\":\"edc05a9f-2d34-4377-984d-3762aed28126\",\"x\":4,\"y\":0,\"width\":4,\"height\":9},{\"id\":\"cc9c1dbf-3c24-465a-ad82-823de8c0a29e\",\"x\":6,\"y\":18,\"width\":6,\"height\":9},{\"id\":\"54ca0329-1ae6-45c1-94d7-451e5e976be7\",\"x\":8,\"y\":9,\"width\":4,\"height\":9},{\"id\":\"b0c667c3-4ff1-46dd-9765-056f82ffa945\",\"x\":0,\"y\":18,\"width\":6,\"height\":9}]",
+      "refreshIntervalSeconds": "300",
+      "timeRangeDuration": "3600",
+      "wrap": "true"
     },
-    "widgets" : [ {
-      "id" : "899805eb-0bf2-496f-bc64-47e373439034",
-      "name" : "Current CPU Utilization",
-      "description" : null,
-      "widgetType" : "metric-status",
-      "properties" : {
-        "visualization" : "gauge",
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "element_id" : null,
-        "elementScopeTypes" : "[]",
-        "metricLimit" : "10",
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "showHighest" : "true",
-        "metric_fqn" : "cpu.used.percent",
-        "width" : "auto",
-        "metrics" : "[]",
-        "selectedTab" : "table"
+    "type": "JVM",
+    "widgets": [
+      {
+        "id": "899805eb-0bf2-496f-bc64-47e373439034",
+        "name": "Current CPU Utilization",
+        "properties": {
+          "metricLimit": "10",
+          "metric_fqn": "cpu.used.percent",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "visualization": "gauge",
+          "width": "auto"
+        },
+        "widgetType": "metric-status"
+      },
+      {
+        "id": "12b8a43a-7794-41f5-8168-6ca0fb1b8111",
+        "name": "Attributes",
+        "properties": {
+          "metricLimit": "10",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "width": "auto"
+        },
+        "widgetType": "element-attributes"
+      },
+      {
+        "id": "7230cab2-0306-4677-815a-686f36462e2a",
+        "name": "Current Heap Utilization",
+        "properties": {
+          "metricLimit": "10",
+          "metric_fqn": "netuitive.jvm.heap.utilizationpercent",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "visualization": "gauge",
+          "width": "auto"
+        },
+        "widgetType": "metric-status"
+      },
+      {
+        "id": "57d62334-d76b-4512-bb89-11b828535e53",
+        "name": "Heap Utilization",
+        "properties": {
+          "metricAggs": "[\"avg\"]",
+          "metricLimit": "10",
+          "metric_fqn": "netuitive.jvm.heap.utilizationpercent",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "width": "medium"
+        },
+        "widgetType": "metric-time-series"
+      },
+      {
+        "id": "edc05a9f-2d34-4377-984d-3762aed28126",
+        "name": "CPU Utilization",
+        "properties": {
+          "metricAggs": "[\"avg\"]",
+          "metricLimit": "10",
+          "metric_fqn": "cpu.used.percent",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "width": "medium"
+        },
+        "widgetType": "metric-time-series"
+      },
+      {
+        "id": "cc9c1dbf-3c24-465a-ad82-823de8c0a29e",
+        "name": "Events",
+        "properties": {
+          "elementScopeTypes": "[\"JVM\"]",
+          "metricLimit": "10",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useAllElementScopeTags": "false",
+          "useAllMetricScopeTags": "false",
+          "useElementNameContains": "true",
+          "width": "medium"
+        },
+        "widgetType": "event-ticker"
+      },
+      {
+        "id": "54ca0329-1ae6-45c1-94d7-451e5e976be7",
+        "name": "Tags",
+        "properties": {
+          "metricLimit": "10",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "width": "medium"
+        },
+        "widgetType": "element-tags"
+      },
+      {
+        "id": "b0c667c3-4ff1-46dd-9765-056f82ffa945",
+        "name": "System Threads",
+        "properties": {
+          "metricAggs": "[\"avg\"]",
+          "metricLimit": "10",
+          "metric_fqn": "system.threads",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "width": "auto"
+        },
+        "widgetType": "metric-time-series"
       }
-    }, {
-      "id" : "12b8a43a-7794-41f5-8168-6ca0fb1b8111",
-      "name" : "Attributes",
-      "description" : null,
-      "widgetType" : "element-attributes",
-      "properties" : {
-        "visualization" : null,
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "element_id" : null,
-        "elementScopeTypes" : "[]",
-        "metricLimit" : "10",
-        "metricUnit" : null,
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "groupName" : null,
-        "elementNameContains" : null,
-        "showHighest" : "true",
-        "metric_fqn" : null,
-        "width" : "auto",
-        "metrics" : "[]",
-        "selectedTab" : "table"
-      }
-    }, {
-      "id" : "7230cab2-0306-4677-815a-686f36462e2a",
-      "name" : "Current Heap Utilization",
-      "description" : null,
-      "widgetType" : "metric-status",
-      "properties" : {
-        "visualization" : "gauge",
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "element_id" : null,
-        "elementScopeTypes" : "[]",
-        "metricLimit" : "10",
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "showHighest" : "true",
-        "metric_fqn" : "netuitive.jvm.heap.utilizationpercent",
-        "width" : "auto",
-        "metrics" : "[]",
-        "selectedTab" : "table"
-      }
-    }, {
-      "id" : "57d62334-d76b-4512-bb89-11b828535e53",
-      "name" : "Heap Utilization",
-      "description" : null,
-      "widgetType" : "metric-time-series",
-      "properties" : {
-        "visualization" : null,
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "element_id" : null,
-        "elementScopeTypes" : "[]",
-        "metricLimit" : "10",
-        "metricUnit" : null,
-        "metricAggs" : "[\"avg\"]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "groupName" : null,
-        "elementNameContains" : null,
-        "showHighest" : "true",
-        "metric_fqn" : "netuitive.jvm.heap.utilizationpercent",
-        "width" : "medium",
-        "metrics" : "[]",
-        "selectedTab" : "table"
-      }
-    }, {
-      "id" : "edc05a9f-2d34-4377-984d-3762aed28126",
-      "name" : "CPU Utilization",
-      "description" : null,
-      "widgetType" : "metric-time-series",
-      "properties" : {
-        "visualization" : null,
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "element_id" : null,
-        "elementScopeTypes" : "[]",
-        "metricLimit" : "10",
-        "metricUnit" : null,
-        "metricAggs" : "[\"avg\"]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "groupName" : null,
-        "elementNameContains" : null,
-        "showHighest" : "true",
-        "metric_fqn" : "cpu.used.percent",
-        "width" : "medium",
-        "metrics" : "[]",
-        "selectedTab" : "table"
-      }
-    }, {
-      "id" : "cc9c1dbf-3c24-465a-ad82-823de8c0a29e",
-      "name" : "Events",
-      "description" : null,
-      "widgetType" : "event-ticker",
-      "properties" : {
-        "visualization" : null,
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "useAllElementScopeTags" : "false",
-        "element_id" : null,
-        "elementScopeTypes" : "[\"JVM\"]",
-        "metricLimit" : "10",
-        "useAllMetricScopeTags" : "false",
-        "metricUnit" : null,
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "groupName" : null,
-        "elementNameContains" : "",
-        "showHighest" : "true",
-        "metric_fqn" : null,
-        "metricScopeTags" : "[]",
-        "width" : "medium",
-        "metrics" : "[]",
-        "selectedTab" : "table"
-      }
-    }, {
-      "id" : "54ca0329-1ae6-45c1-94d7-451e5e976be7",
-      "name" : "Tags",
-      "description" : null,
-      "widgetType" : "element-tags",
-      "properties" : {
-        "visualization" : null,
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "element_id" : null,
-        "elementScopeTypes" : "[]",
-        "metricLimit" : "10",
-        "metricUnit" : null,
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "groupName" : null,
-        "elementNameContains" : null,
-        "showHighest" : "true",
-        "metric_fqn" : null,
-        "width" : "medium",
-        "metrics" : "[]",
-        "selectedTab" : "table"
-      }
-    }, {
-      "id" : "b0c667c3-4ff1-46dd-9765-056f82ffa945",
-      "name" : "System Threads",
-      "description" : null,
-      "widgetType" : "metric-time-series",
-      "properties" : {
-        "visualization" : null,
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "element_id" : null,
-        "elementScopeTypes" : "[]",
-        "metricLimit" : "10",
-        "metricUnit" : null,
-        "metricAggs" : "[\"avg\"]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "groupName" : null,
-        "elementNameContains" : null,
-        "showHighest" : "true",
-        "metric_fqn" : "system.threads",
-        "width" : "auto",
-        "metrics" : "[]",
-        "selectedTab" : "table"
-      }
-    } ],
-    "type" : "JVM",
-    "private" : false
+    ]
   }
 }

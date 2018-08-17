@@ -1,48 +1,30 @@
 {
-  "policy" : {
-    "id" : null,
-    "name" : "Java - Elevated JVM Heap Usage",
-    "description" : "The percentage of the heap in use by the JVM is higher than expected.  The metric is deviating from both the baseline and contextual bands.",
-    "scope" : {
-      "elementName" : null,
-      "elementNameExclude" : null,
-      "fqnIncludes" : [ ],
-      "fqnExcludes" : [ ],
-      "elementType" : "JVM",
-      "elementTags" : { }
-    },
-    "duration" : 900,
-    "conditions" : [ {
-      "metric" : "netuitive.jvm.heap.utilizationpercent",
-      "wildcard" : null,
-      "metricScopeTags" : { },
-      "analytic" : "baselineDeviation",
-      "operator" : ">",
-      "level" : null,
-      "level2" : null,
-      "metricThresholdLevel" : null,
-      "metricThresholdAnalytic" : null
-    }, {
-      "metric" : "netuitive.jvm.heap.utilizationpercent",
-      "wildcard" : null,
-      "metricScopeTags" : { },
-      "analytic" : "contextualDeviation",
-      "operator" : ">",
-      "level" : null,
-      "level2" : null,
-      "metricThresholdLevel" : null,
-      "metricThresholdAnalytic" : null
-    } ],
-    "eventConditions" : [ ],
-    "actions" : [ {
-      "type" : "event",
-      "category" : 2
-    } ],
-    "enabled" : true,
-    "deleted" : false,
-    "originTenantId" : null,
-    "originPolicyId" : null,
-    "creatorEmail" : null,
-    "lastUpdated" : null
+  "policy": {
+    "actions": [
+      {
+        "category": 2,
+        "type": "event"
+      }
+    ],
+    "conditions": [
+      {
+        "analytic": "baselineDeviation",
+        "metric": "netuitive.jvm.heap.utilizationpercent",
+        "operator": ">"
+      },
+      {
+        "analytic": "contextualDeviation",
+        "metric": "netuitive.jvm.heap.utilizationpercent",
+        "operator": ">"
+      }
+    ],
+    "deleted": false,
+    "description": "The percentage of the heap in use by the JVM is higher than expected.  The metric is deviating from both the baseline and contextual bands.",
+    "duration": 900,
+    "enabled": true,
+    "name": "Java - Elevated JVM Heap Usage",
+    "scope": {
+      "elementType": "JVM"
+    }
   }
 }

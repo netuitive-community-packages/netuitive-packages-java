@@ -1,80 +1,84 @@
 {
-  "analyticConfiguration" : {
-    "tenantId" : null,
-    "type" : "METRIC_META",
-    "id" : null,
-    "packageId" : null,
-    "name" : "Java JVM",
-    "scope" : {
-      "elementName" : null,
-      "elementType" : "JVM",
-      "elementTags" : null,
-      "metricMatches" : null
+  "analyticConfiguration": {
+    "metrics": [
+      {
+        "match": ".*\\.calls",
+        "properties": {
+          "STATISTIC": "sum"
+        }
+      },
+      {
+        "match": ".*\\.errors",
+        "properties": {
+          "STATISTIC": "sum"
+        }
+      },
+      {
+        "match": ".*\\.time",
+        "properties": {
+          "STATISTIC": "sum",
+          "tags": {
+            "unit": "ms"
+          }
+        }
+      },
+      {
+        "match": "cpu.used.percent",
+        "properties": {
+          "tags": {
+            "unit": "percent",
+            "utilization": true
+          },
+          "validMax": 100
+        }
+      },
+      {
+        "match": "netuitive.jvm\\..*\\.utilizationpercent",
+        "properties": {
+          "tags": {
+            "unit": "percent",
+            "utilization": true
+          },
+          "validMax": 100
+        }
+      },
+      {
+        "match": "gc\\..*\\.collectiontime",
+        "properties": {
+          "type": "COUNTER",
+          "validMax": 300000
+        }
+      },
+      {
+        "match": ".*\\.errorpercent",
+        "properties": {
+          "tags": {
+            "unit": "percent"
+          },
+          "validMax": 100
+        }
+      },
+      {
+        "match": "heap\\..*",
+        "properties": {
+          "tags": {
+            "unit": "bytes"
+          }
+        }
+      },
+      {
+        "match": "mempool\\..*",
+        "properties": {
+          "tags": {
+            "unit": "bytes"
+          }
+        }
+      }
+    ],
+    "name": "Java JVM",
+    "scope": {
+      "elementType": "JVM"
     },
-    "metrics" : [ {
-      "match" : ".*\\.calls",
-      "properties" : {
-        "STATISTIC" : "sum"
-      }
-    }, {
-      "match" : ".*\\.errors",
-      "properties" : {
-        "STATISTIC" : "sum"
-      }
-    }, {
-      "match" : ".*\\.time",
-      "properties" : {
-        "STATISTIC" : "sum",
-        "tags" : {
-          "unit" : "ms"
-        }
-      }
-    }, {
-      "match" : "cpu.used.percent",
-      "properties" : {
-        "tags" : {
-          "utilization" : true,
-          "unit" : "percent"
-        },
-        "validMax" : 100
-      }
-    }, {
-      "match" : "netuitive.jvm\\..*\\.utilizationpercent",
-      "properties" : {
-        "tags" : {
-          "utilization" : true,
-          "unit" : "percent"
-        },
-        "validMax" : 100
-      }
-    }, {
-      "match" : "gc\\..*\\.collectiontime",
-      "properties" : {
-        "type" : "COUNTER",
-        "validMax" : 300000
-      }
-    }, {
-      "match" : ".*\\.errorpercent",
-      "properties" : {
-        "tags" : {
-          "unit" : "percent"
-        },
-        "validMax" : 100
-      }
-    }, {
-      "match" : "heap\\..*",
-      "properties" : {
-        "tags" : {
-          "unit" : "bytes"
-        }
-      }
-    }, {
-      "match" : "mempool\\..*",
-      "properties" : {
-        "tags" : {
-          "unit" : "bytes"
-        }
-      }
-    } ]
+    "type": "METRIC_META"
   }
 }
