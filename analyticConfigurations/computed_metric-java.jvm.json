@@ -36,11 +36,11 @@
       {
         "match": "netuitive.method.errorpercent",
         "properties": {
+          "capture": "(.*)\\.(.*)\\.errors",
           "expressions": [
             "100 * (${${1}.${2}.errors}.actual / ${${1}.${2}.calls}.actual)",
             "0"
           ],
-          "capture": "(.*)\\.(.*)\\.errors",
           "fqn": "netuitive.${1}.${2}.errorpercent"
         }
       }
