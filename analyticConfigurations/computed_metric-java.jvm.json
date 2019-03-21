@@ -4,7 +4,9 @@
       {
         "match": "netuitive.jvm.heap.utilizationpercent",
         "properties": {
-          "expression": "(data['heap.used'].actual / data['heap.committed'].actual) * 100",
+          "expressions": [
+            "100 * ${heap.used}.actual / ${heap.committed}.actual"
+          ],
           "fqn": "netuitive.jvm.heap.utilizationpercent",
           "name": "Heap Utilization Percent"
         }
@@ -12,7 +14,10 @@
       {
         "match": "netuitive.jvm.non-heap.utilizationpercent",
         "properties": {
-          "expression": "data['mempool.metaspace.used'] != null && data['mempool.metaspace.used'].actual ? (data['mempool.codecache.used'].actual + data['mempool.metaspace.used'].actual) / (data['mempool.codecache.committed'].actual + data['mempool.metaspace.committed'].actual) * 100 : (data['mempool.codecache.used'].actual + data['mempool.pspermgen.used'].actual) / (data['mempool.codecache.committed'].actual + data['mempool.pspermgen.committed'].actual) * 100",
+          "expressions": [
+            "(${mempool.codecache.used}.actual + ${mempool.metaspace.used}.actual) / (${mempool.codecache.committed}.actual + ${mempool.metaspace.committed}.actual) * 100",
+            "(${mempool.codecache.used}.actual + ${mempool.pspermgen.used}.actual) / (${mempool.codecache.committed}.actual + ${mempool.pspermgen.committed}.actual) * 100"
+          ],
           "fqn": "netuitive.jvm.non-heap.utilizationpercent",
           "name": "Non-Heap Utilization Percent"
         }
@@ -20,7 +25,10 @@
       {
         "match": "netuitive.jvm.totalmemory.utilizationpercent",
         "properties": {
-          "expression": "data['mempool.metaspace.used'] != null && data['mempool.metaspace.used'].actual ? (data['mempool.codecache.used'].actual + data['mempool.metaspace.used'].actual + data['heap.used'].actual) / (data['mempool.codecache.committed'].actual + data['mempool.metaspace.committed'].actual + data['heap.committed'].actual) * 100 : (data['mempool.codecache.used'].actual + data['mempool.pspermgen.used'].actual + data['heap.used'].actual) / (data['mempool.codecache.committed'].actual + data['mempool.pspermgen.committed'].actual + data['heap.committed'].actual) * 100",
+          "expressions": [
+            "(${mempool.codecache.used}.actual + ${mempool.metaspace.used}.actual + ${heap.used}.actual) / (${mempool.codecache.committed}.actual + ${mempool.metaspace.committed}.actual + ${heap.committed}.actual) * 100",
+            "(${mempool.codecache.used}.actual + ${mempool.pspermgen.used}.actual + ${heap.used}.actual) / (${mempool.codecache.committed}.actual + ${mempool.pspermgen.committed}.actual + ${heap.committed}.actual) * 100"
+          ],
           "fqn": "netuitive.jvm.totalmemory.utilizationpercent",
           "name": "Total Memory Utilization Percent"
         }
@@ -28,8 +36,11 @@
       {
         "match": "netuitive.method.errorpercent",
         "properties": {
-          "expression": "data['${1}.${2}.calls'].actual == 0 ? 0 : 100 * (data['${1}.${2}.errors'].actual / data['${1}.${2}.calls'].actual)",
-          "for": "(.*)\\.(.*)\\.errors",
+          "capture": "(.*)\\.(.*)\\.errors",
+          "expressions": [
+            "100 * (${${1}.${2}.errors}.actual / ${${1}.${2}.calls}.actual)",
+            "0"
+          ],
           "fqn": "netuitive.${1}.${2}.errorpercent"
         }
       }
