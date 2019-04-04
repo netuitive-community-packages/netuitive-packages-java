@@ -77,7 +77,7 @@
     ],
     "name": "Java JVM",
     "scope": {
-      "elementType": "JVM"
+      "elementType": [ "JVM", "CLUSTER" ]
     },
     "type": "METRIC_META"
   }
