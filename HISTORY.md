@@ -2,6 +2,10 @@
 
 ### Version next
 
+### Version 1.9.0
+
+* Change elementType to elementTypes array.
+
 ### Version 1.8.0
 
 * Add Cluster elementType to metric_meta in order to persist unit configurations.

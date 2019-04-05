@@ -77,7 +77,7 @@
     ],
     "name": "Java JVM",
     "scope": {
-      "elementType": [
+      "elementTypes": [
         "JVM",
         "CLUSTER"
       ]
