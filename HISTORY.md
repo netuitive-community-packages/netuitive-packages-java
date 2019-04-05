@@ -2,6 +2,8 @@
 
 ### Version next
 
+### Version 1.8.0
+
 * Add Cluster elementType to metric_meta in order to persist unit configurations.
 
 ### Version 1.7.0
