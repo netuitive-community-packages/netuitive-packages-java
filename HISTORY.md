@@ -2,6 +2,8 @@
 
 ### Version next
 
+* Refresh JVM Element Details.
+
 ### Version 1.9.0
 
 * Change elementType to elementTypes array.

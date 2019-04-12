@@ -126,6 +126,96 @@
           "width": "auto"
         },
         "widgetType": "metric-time-series"
+      },
+      {
+        "id": "337dd7da-1881-4f39-ba55-ff294763faa9",
+        "name": "Heap Committed",
+        "properties": {
+          "metricAggs": "[\"avg\"]",
+          "metricLimit": "10",
+          "metric_fqn": "heap.committed",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "width": "medium"
+        },
+        "widgetType": "metric-time-series"
+      },
+      {
+        "id": "01f5c49c-9998-446c-ac1f-00625271c9d0",
+        "name": "Heap Used",
+        "properties": {
+          "metricAggs": "[\"avg\"]",
+          "metricLimit": "10",
+          "metric_fqn": "heap.used",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "width": "medium"
+        },
+        "widgetType": "metric-time-series"
+      },
+      {
+        "id": "c7d6aa56-04fe-4fa6-a270-4fe96e5533aa",
+        "name": "Mempool Metaspace Committed",
+        "properties": {
+          "metricAggs": "[\"avg\"]",
+          "metricLimit": "10",
+          "metric_fqn": "mempool.metaspace.committed",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "width": "medium"
+        },
+        "widgetType": "metric-time-series"
+      },
+      {
+        "id": "7c0b346b-ea82-4406-b857-9c9f0f0c8ddc",
+        "name": "Mempool Metaspace Used",
+        "properties": {
+          "metricAggs": "[\"avg\"]",
+          "metricLimit": "10",
+          "metric_fqn": "mempool.metaspace.used",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "width": "medium"
+        },
+        "widgetType": "metric-time-series"
+      },
+      {
+        "id": "dc7705fc-d66f-4791-b880-d40cd1784162",
+        "name": "GC Parnew Collection Time",
+        "properties": {
+          "metricAggs": "[\"avg\"]",
+          "metricLimit": "10",
+          "metric_fqn": "gc.parnew.collectiontime",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "width": "medium"
+        },
+        "widgetType": "metric-time-series"
+      },
+      {
+        "id": "7286c762-5e8f-45ce-8976-c7b3c1ec80cf",
+        "name": "GC Parnew Concurrentmarksweep Collection Time",
+        "properties": {
+          "metricAggs": "[\"avg\"]",
+          "metricLimit": "10",
+          "metric_fqn": "gc.concurrentmarksweep.collectiontime",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "width": "medium"
+        },
+        "widgetType": "metric-time-series"
       }
     ]
   }
