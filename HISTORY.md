@@ -2,6 +2,8 @@
 
 ### Version next
 
+* Remove pspermgen from netuitive.jvm.non-heap.utilizationpercent and netuitive.jvm.totalmemory.utilizationpercent computation.
+
 ### Version 1.9.0
 
 * Change elementType to elementTypes array.
