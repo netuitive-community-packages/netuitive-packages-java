@@ -3,7 +3,7 @@
     "name": "Cluster Element Detail",
     "private": false,
     "properties": {
-      "gridstackContents": "[{\"id\":\"899805eb-0bf2-496f-bc64-47e373439033\",\"x\":0,\"y\":0,\"width\":4,\"height\":9},{\"id\":\"12b8a43a-7794-41f5-8168-6ca0fb1b8113\",\"x\":8,\"y\":0,\"width\":4,\"height\":9},{\"id\":\"7230cab2-0306-4677-815a-686f36462e3a\",\"x\":0,\"y\":9,\"width\":4,\"height\":9},{\"id\":\"57d62334-d76b-4512-bb89-11b828535e33\",\"x\":4,\"y\":9,\"width\":4,\"height\":9},{\"id\":\"edc05a9f-2d34-4377-984d-3762aed28123\",\"x\":4,\"y\":0,\"width\":4,\"height\":9},{\"id\":\"cc9c1dbf-3c24-465a-ad82-823de8c0a23e\",\"x\":6,\"y\":18,\"width\":6,\"height\":9},{\"id\":\"54ca0329-1ae6-45c1-94d7-451e5e976be3\",\"x\":8,\"y\":9,\"width\":4,\"height\":9},{\"id\":\"b0c667c3-4ff1-46dd-9765-056f82ffa943\",\"x\":0,\"y\":18,\"width\":6,\"height\":9}, {\"id\":\"337dd7da-1881-4f39-ba55-ff294763faa3\",\"x\":0,\"y\":27,\"width\":4,\"height\":9}, {\"id\":\"01f5c49c-9998-446c-ac1f-00625271c9d3\",\"x\":4,\"y\":27,\"width\":4,\"height\":9}, {\"id\":\"c7d6aa56-04fe-4fa6-a270-4fe96e5333aa\",\"x\":8,\"y\":27,\"width\":4,\"height\":9}, {\"id\":\"7c0b346b-ea82-4406-b857-9c9f0f0c3ddc\",\"x\":0,\"y\":36,\"width\":4,\"height\":9}, {\"id\":\"dc7705fc-d66f-4791-b880-d40cd1784163\",\"x\":4,\"y\":36,\"width\":4,\"height\":9}]",
+      "gridstackContents": "[{\"id\":\"899805eb-0bf2-496f-bc64-47e373439033\",\"x\":0,\"y\":0,\"width\":4,\"height\":9},{\"id\":\"12b8a43a-7794-41f5-8168-6ca0fb1b8113\",\"x\":8,\"y\":0,\"width\":4,\"height\":9},{\"id\":\"337dd7da-1881-4f39-ba55-ff294763faa3\",\"x\":0,\"y\":9,\"width\":4,\"height\":9},{\"id\":\"01f5c49c-9998-446c-ac1f-00625271c9d3\",\"x\":4,\"y\":9,\"width\":4,\"height\":9},{\"id\":\"edc05a9f-2d34-4377-984d-3762aed28123\",\"x\":4,\"y\":0,\"width\":4,\"height\":9},{\"id\":\"cc9c1dbf-3c24-465a-ad82-823de8c0a23e\",\"x\":6,\"y\":18,\"width\":6,\"height\":9},{\"id\":\"54ca0329-1ae6-45c1-94d7-451e5e976be3\",\"x\":8,\"y\":9,\"width\":4,\"height\":9},{\"id\":\"b0c667c3-4ff1-46dd-9765-056f82ffa943\",\"x\":0,\"y\":18,\"width\":6,\"height\":9}, {\"id\":\"c7d6aa56-04fe-4fa6-a270-4fe96e5333aa\",\"x\":0,\"y\":27,\"width\":4,\"height\":9}, {\"id\":\"7c0b346b-ea82-4406-b857-9c9f0f0c3ddc\",\"x\":4,\"y\":27,\"width\":4,\"height\":9}, {\"id\":\"dc7705fc-d66f-4791-b880-d40cd1784163\",\"x\":8,\"y\":27,\"width\":4,\"height\":9}]",
       "refreshIntervalSeconds": "300",
       "timeRangeDuration": "3600",
       "wrap": "true"
@@ -37,36 +37,6 @@
           "width": "auto"
         },
         "widgetType": "element-attributes"
-      },
-      {
-        "id": "7230cab2-0306-4677-815a-686f36462e3a",
-        "name": "Current Heap Utilization",
-        "properties": {
-          "metricLimit": "10",
-          "metric_fqn": "netuitive.jvm.heap.utilizationpercent",
-          "selectedTab": "table",
-          "showElementTotal": "true",
-          "showHighest": "true",
-          "useElementNameContains": "true",
-          "visualization": "gauge",
-          "width": "auto"
-        },
-        "widgetType": "metric-status"
-      },
-      {
-        "id": "57d62334-d76b-4512-bb89-11b828535e33",
-        "name": "Heap Utilization",
-        "properties": {
-          "metricAggs": "[\"avg\"]",
-          "metricLimit": "10",
-          "metric_fqn": "netuitive.jvm.heap.utilizationpercent",
-          "selectedTab": "table",
-          "showElementTotal": "true",
-          "showHighest": "true",
-          "useElementNameContains": "true",
-          "width": "medium"
-        },
-        "widgetType": "metric-time-series"
       },
       {
         "id": "edc05a9f-2d34-4377-984d-3762aed28123",
