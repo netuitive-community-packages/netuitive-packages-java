@@ -2,6 +2,8 @@
 
 ### Version next
 
+### Version 2.0.0
+
 * Refresh JVM Element Details.
 * Refresh Cluster Element Details.
 * Refresh JVM Summary.
