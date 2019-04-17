@@ -62,7 +62,13 @@
     }
   }, {
     "data" : {
-      "file" : "dashboards/java.element.detail.json",
+      "file" : "dashboards/java.cluster.element.detail.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "dashboards/java.jvm.element.detail.json",
       "encoding" : "application/json",
       "content" : null
     }
