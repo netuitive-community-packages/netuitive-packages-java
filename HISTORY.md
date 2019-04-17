@@ -3,6 +3,7 @@
 ### Version next
 
 * Refresh JVM Element Details.
+* Add CLUSTER Element Details.
 
 ### Version 1.9.0
 
