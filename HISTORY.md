@@ -3,6 +3,8 @@
 ### Version next
 
 * Refresh JVM Element Details.
+* Refresh Cluster Element Details.
+* Refresh JVM Summary.
 
 ### Version 1.9.0
 
