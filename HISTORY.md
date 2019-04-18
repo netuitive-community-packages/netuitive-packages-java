@@ -2,10 +2,13 @@
 
 ### Version next
 
+* Remove pspermgen from netuitive.jvm.non-heap.utilizationpercent and netuitive.jvm.totalmemory.utilizationpercent computation.
+
+### Version 2.0.0
+
 * Refresh JVM Element Details.
 * Refresh Cluster Element Details.
 * Refresh JVM Summary.
-* Remove pspermgen from netuitive.jvm.non-heap.utilizationpercent and netuitive.jvm.totalmemory.utilizationpercent computation.
 
 ### Version 1.9.0
 
