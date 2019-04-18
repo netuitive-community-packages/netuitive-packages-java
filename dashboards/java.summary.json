@@ -3,7 +3,7 @@
     "name": "Java Summary",
     "private": false,
     "properties": {
-      "gridstackContents": "[{\"id\":\"37eae575-e2b2-4af9-aacb-4ff96cfc305e\",\"x\":0,\"y\":0,\"width\":6,\"height\":9},{\"id\":\"787109b7-1d2f-4497-92ef-6f7bf27cda63\",\"x\":6,\"y\":0,\"width\":6,\"height\":9},{\"id\":\"91205330-1fd2-417e-936b-a6069b5cba21\",\"x\":0,\"y\":9,\"width\":12,\"height\":9}]",
+      "gridstackContents": "[{\"id\":\"787109b7-1d2f-4497-92ef-6f7bf27cda63\",\"x\":6,\"y\":0,\"width\":6,\"height\":9},{\"id\":\"91205330-1fd2-417e-936b-a6069b5cba21\",\"x\":0,\"y\":9,\"width\":12,\"height\":9},{\"id\":\"37eae575-e2b2-4af9-aacb-4ff96cfc305e\",\"x\":0,\"y\":0,\"width\":6,\"height\":9},{\"id\":\"a33cee31-7a41-4e0e-a311-af846afa5a6e\",\"x\":8,\"y\":18,\"width\":4,\"height\":7},{\"id\":\"e188286c-1f06-4b0e-a023-9f535b3d28ea\",\"x\":0,\"y\":18,\"width\":4,\"height\":7},{\"id\":\"36ea6a23-4e85-4d1d-a1e1-eca2d309f09d\",\"x\":4,\"y\":18,\"width\":4,\"height\":7},{\"id\":\"f8b45200-9a5b-466f-ab77-49590531c324\",\"x\":0,\"y\":25,\"width\":4,\"height\":7},{\"id\":\"02e40b3c-3dad-41ce-ac5c-124612662b25\",\"x\":4,\"y\":25,\"width\":4,\"height\":7},{\"id\":\"f7a6046d-a912-4e9f-bdd2-9374fc5a4624\",\"x\":8,\"y\":25,\"width\":4,\"height\":7}]",
       "refreshIntervalSeconds": "300",
       "timeRangeDuration": "3600",
       "wrap": "true"
@@ -55,6 +55,156 @@
           "width": "auto"
         },
         "widgetType": "multi-metric-table"
+      },
+      {
+        "id": "f7a6046d-a912-4e9f-bdd2-9374fc5a4624",
+        "name": "GC Collection Time",
+        "properties": {
+          "colorByMetric": "false",
+          "elementScopeTypes": "[\"JVM\"]",
+          "groupByPolicy": "false",
+          "grouping": "attribute=SERVICE",
+          "metricAgg": "avg",
+          "metricLimit": "5",
+          "metrics": "[{\"fqn\":\"gc.*.collectiontime\",\"useRegex\":true,\"aggFns\":[],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]",
+          "notificationPeriod": "off",
+          "period": "latest1",
+          "showBands": "true",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+          "topNLimit": "5",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "line"
+        },
+        "widgetType": "multi-metric"
+      },
+      {
+        "id": "a33cee31-7a41-4e0e-a311-af846afa5a6e",
+        "name": "Top 5 Highest System Threads",
+        "properties": {
+          "colorByMetric": "false",
+          "elementScopeTypes": "[\"JVM\"]",
+          "groupByPolicy": "false",
+          "grouping": "attribute=SERVICE",
+          "metricAgg": "avg",
+          "metricLimit": "5",
+          "metric_fqn": "system.threads",
+          "notificationPeriod": "off",
+          "period": "latest1",
+          "showBands": "true",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+          "topNLimit": "5",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "graph"
+        },
+        "widgetType": "metric-range"
+      },
+      {
+        "id": "e188286c-1f06-4b0e-a023-9f535b3d28ea",
+        "name": "Top 5 Highest Heap Committed",
+        "properties": {
+          "colorByMetric": "false",
+          "elementScopeTypes": "[\"JVM\"]",
+          "groupByPolicy": "false",
+          "grouping": "attribute=SERVICE",
+          "metricAgg": "avg",
+          "metricLimit": "5",
+          "metric_fqn": "heap.committed",
+          "notificationPeriod": "off",
+          "period": "latest1",
+          "showBands": "true",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+          "topNLimit": "5",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "graph"
+        },
+        "widgetType": "metric-range"
+      },
+      {
+        "id": "36ea6a23-4e85-4d1d-a1e1-eca2d309f09d",
+        "name": "Top 5 Highest Heap Used",
+        "properties": {
+          "colorByMetric": "false",
+          "elementScopeTypes": "[\"JVM\"]",
+          "groupByPolicy": "false",
+          "grouping": "attribute=SERVICE",
+          "metricAgg": "avg",
+          "metricLimit": "5",
+          "metric_fqn": "heap.used",
+          "notificationPeriod": "off",
+          "period": "latest1",
+          "showBands": "true",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+          "topNLimit": "5",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "graph"
+        },
+        "widgetType": "metric-range"
+      },
+      {
+        "id": "02e40b3c-3dad-41ce-ac5c-124612662b25",
+        "name": "Top 5 Highest Mempool Metaspace Used",
+        "properties": {
+          "colorByMetric": "false",
+          "elementScopeTypes": "[\"JVM\"]",
+          "groupByPolicy": "false",
+          "grouping": "attribute=SERVICE",
+          "metricAgg": "avg",
+          "metricLimit": "5",
+          "metric_fqn": "mempool.metaspace.used",
+          "notificationPeriod": "off",
+          "period": "latest1",
+          "showBands": "true",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+          "topNLimit": "5",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "graph"
+        },
+        "widgetType": "metric-range"
+      },
+      {
+        "id": "f8b45200-9a5b-466f-ab77-49590531c324",
+        "name": "Top 5 Highest Mempool Metaspace Committed",
+        "properties": {
+          "colorByMetric": "false",
+          "elementScopeTypes": "[\"JVM\"]",
+          "groupByPolicy": "false",
+          "grouping": "attribute=SERVICE",
+          "metricAgg": "avg",
+          "metricLimit": "5",
+          "metric_fqn": "mempool.metaspace.committed",
+          "notificationPeriod": "off",
+          "period": "latest1",
+          "showBands": "true",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+          "topNLimit": "5",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "graph"
+        },
+        "widgetType": "metric-range"
       }
     ]
   }
