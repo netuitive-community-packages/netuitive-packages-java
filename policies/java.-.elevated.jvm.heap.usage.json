@@ -24,7 +24,9 @@
     "enabled": true,
     "name": "Java - Elevated JVM Heap Usage",
     "scope": {
-      "elementType": "JVM"
+      "elementTypes": [
+        "JVM"
+      ]
     }
   }
 }

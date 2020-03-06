@@ -30,7 +30,9 @@
     "enabled": true,
     "name": "Java - Elevated JVM CPU Activity",
     "scope": {
-      "elementType": "JVM"
+      "elementTypes": [
+        "JVM"
+      ]
     }
   }
 }
