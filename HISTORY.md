@@ -2,6 +2,8 @@
 
 ### Version next
 
+* Convert single elementType to elementTypes array in policy scope
+
 ### Version 2.1.0
 
 * Remove pspermgen from netuitive.jvm.non-heap.utilizationpercent and netuitive.jvm.totalmemory.utilizationpercent computation.

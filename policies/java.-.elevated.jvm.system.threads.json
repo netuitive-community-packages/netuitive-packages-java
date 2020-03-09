@@ -24,7 +24,9 @@
     "enabled": true,
     "name": "Java - Elevated JVM System Threads",
     "scope": {
-      "elementType": "JVM"
+      "elementTypes": [
+        "JVM"
+      ]
     }
   }
 }
